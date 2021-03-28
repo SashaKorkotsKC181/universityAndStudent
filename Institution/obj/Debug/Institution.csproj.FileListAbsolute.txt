@@ -1,0 +1,6 @@
+D:\Internships\Institution\Institution\bin\Debug\Institution.exe.config
+D:\Internships\Institution\Institution\obj\Debug\Institution.csprojResolveAssemblyReference.cache
+D:\Internships\Institution\Institution\bin\Debug\Institution.exe
+D:\Internships\Institution\Institution\bin\Debug\Institution.pdb
+D:\Internships\Institution\Institution\obj\Debug\Institution.exe
+D:\Internships\Institution\Institution\obj\Debug\Institution.pdb
