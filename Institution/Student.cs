@@ -9,22 +9,22 @@ namespace Institution
     public class Student : Person
     {
         public EducationPlace educationPlace;
-        public Knowledge knowledge;
+        public Knowledge Knowledge { get; private set; }
         public Student(string name_)
             : base(name_)
         {
-            knowledge = new Knowledge(0);
+            Knowledge = new Knowledge(0);
         }
         
         public Student(string name_, Knowledge knowledge_)
             : base(name_)
         {
-            knowledge = knowledge_;
+            Knowledge = new Knowledge(knowledge_.level);
         }
 
         public void SetKnowledge(Knowledge knowledge_)
         {
-            knowledge = knowledge_;
+            Knowledge = new Knowledge(knowledge_.level);
         }
     }
 }

@@ -23,7 +23,7 @@ namespace Institution
         {
             Students.Add(student_);
             student_.educationPlace = this; 
-            MidleLevelKnowledge = new Knowledge(Students.Average(student => student.knowledge.level));
+            MidleLevelKnowledge = new Knowledge(Students.Average(student => student.Knowledge.level));
             
         }
         
@@ -34,7 +34,13 @@ namespace Institution
                 AddStudent(student);
             }
         }
-
+        public void AddStudentsFromOtherEducPlace(EducationPlace educationPlace)
+        {
+            foreach (Student student in educationPlace.Students)
+            {
+                AddStudent(student);
+            }
+        }
         public string GetStudents()
         {
             string output = "";

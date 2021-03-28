@@ -18,8 +18,10 @@ namespace Institution
             university.AddStudent(s);
 
             Internship internship = new Internship("Interlink");
-            internship.AddStudents(university.Students);
+            //internship.AddStudents(university.Students);
 
+
+            internship.AddStudentsFromOtherEducPlace(university); // поліморфізм
 
             Console.WriteLine("List of internship's students:");
             Console.WriteLine(internship.GetStudents());

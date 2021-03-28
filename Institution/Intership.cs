@@ -15,7 +15,7 @@ namespace Institution
 
         public override void AddStudent(Student student)
         {
-            if (student.educationPlace.MidleLevelKnowledge < student.knowledge)
+            if (student.educationPlace.MidleLevelKnowledge < student.Knowledge)
             {
                 base.AddStudent(student);
             }
